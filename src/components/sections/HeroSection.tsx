@@ -71,7 +71,7 @@ export default function HeroSection() {
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6 animate-fade-in-up">
           Kampung Anggrek Mandiri
         </h1>
-        <p className="text-lg md:text-2xl text-white/90 mb-8 leading-relaxed max-w-4xl mx-auto animate-fade-in-up animate-delay-200">
+        <p className="text-md md:text-2xl text-white/90 mb-8 leading-relaxed max-w-4xl mx-auto animate-fade-in-up animate-delay-200">
           Temukan keindahan desa anggrek yang dikelola mandiri - tempat di mana alam, komunitas, dan tradisi bersatu
           dalam harmoni sempurna
         </p>
