@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import { Button } from "@/components/ui/button"
-import { MapPin, Phone, Mail, MessageCircle, Clock } from "lucide-react"
+import { MapPin, Phone, MessageCircle, Clock } from "lucide-react"
 
 export default function ContactSection() {
   const [isVisible, setIsVisible] = useState(false)

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
-import { TreePine, Flower2, Users, Camera } from "lucide-react"
+import { TreePine, Flower2, Users } from "lucide-react"
 
 const features = [
   {
