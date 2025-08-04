@@ -173,15 +173,15 @@ export default function GallerySection() {
         {/* Photo Stats */}
         <div className={`mt-16 ${isVisible ? "animate-fade-in-up animate-delay-600" : "opacity-0"}`}>
           <div className="bg-gradient-to-r from-purple-500 via-indigo-500 to-pink-500 rounded-2xl p-8 shadow-2xl">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 text-center text-white">
               <div>
-                <div className="text-2xl md:text-3xl font-bold mb-2">500+</div>
+                <div className="text-2xl md:text-3xl font-bold mb-2">20+</div>
                 <div className="text-sm opacity-90">Spesies Anggrek</div>
               </div>
-              <div>
+              {/* <div>
                 <div className="text-2xl md:text-3xl font-bold mb-2">5 Ha</div>
                 <div className="text-sm opacity-90">Luas Kebun</div>
-              </div>
+              </div> */}
               <div>
                 <div className="text-2xl md:text-3xl font-bold mb-2">25+</div>
                 <div className="text-sm opacity-90">Keluarga Terlibat</div>

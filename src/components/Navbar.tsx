@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Menu, X, Flower2, Phone } from "lucide-react"
+import { Menu, X, Phone } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -38,8 +39,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="#beranda" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center shadow-lg">
-              <Flower2 className="h-6 w-6 text-white" />
+            <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center shadow-lg p-1">
+              <Image 
+                src="/icon anggrek.png" 
+                alt="Kampung Anggrek Icon" 
+                width={32} 
+                height={32} 
+                className="rounded-full object-cover"
+              />
             </div>
             <div className="hidden md:block">
               <div className={`font-bold text-lg transition-colors ${

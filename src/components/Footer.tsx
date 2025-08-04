@@ -1,5 +1,6 @@
-import { Flower2, MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react"
+import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Footer() {
   const navigationLinks = [
@@ -14,7 +15,6 @@ export default function Footer() {
   const quickInfo = [
     { icon: MapPin, text: "Dusun Gerdu, RW.17, Tulungrejo, Kec. Bumiaji, Kota Batu, Jawa Timur 65336" },
     { icon: Phone, text: "+62 812-3456-7890" },
-    { icon: Mail, text: "info@kampunganggrek.com" },
   ]
 
   return (
@@ -24,8 +24,14 @@ export default function Footer() {
           {/* Logo & Description */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center shadow-lg">
-                <Flower2 className="h-7 w-7 text-white" />
+              <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center shadow-lg p-1.5">
+                <Image 
+                  src="/icon anggrek.png" 
+                  alt="Kampung Anggrek Icon" 
+                  width={36} 
+                  height={36} 
+                  className="rounded-full object-cover"
+                />
               </div>
               <div>
                 <div className="font-bold text-xl">Kampung Anggrek Mandiri</div>
@@ -38,16 +44,10 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <Link
-                href="#"
+                href="https://www.instagram.com/anggrekmandiri/"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-gradient-to-br hover:from-purple-500 hover:to-pink-500 transition-all"
               >
                 <Instagram className="h-5 w-5" />
-              </Link>
-              <Link
-                href="#"
-                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-gradient-to-br hover:from-purple-500 hover:to-pink-500 transition-all"
-              >
-                <Facebook className="h-5 w-5" />
               </Link>
             </div>
           </div>

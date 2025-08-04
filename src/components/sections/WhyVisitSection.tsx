@@ -23,12 +23,6 @@ const features = [
     description: "Nikmati interaksi autentik dengan keluarga lokal dan pelajari praktik tradisional",
     gradient: "from-indigo-500 to-purple-500",
   },
-  {
-    icon: Camera,
-    title: "Spot Foto Instagramable",
-    description: "Abadikan momen indah dengan pemandangan yang memukau di setiap sudut",
-    gradient: "from-pink-500 to-rose-500",
-  },
 ]
 
 export default function WhyVisitSection() {
@@ -64,7 +58,7 @@ export default function WhyVisitSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <Card
               key={index}

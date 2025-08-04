@@ -76,21 +76,33 @@ export default function HeroSection() {
           dalam harmoni sempurna
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animate-delay-400">
-          <Button
-            size="lg"
-            className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold uppercase px-8 py-4 text-md md:text-lg transform hover:scale-105 transition-all shadow-lg"
-          >
-            <Mountain className="mr-2 h-5 w-5" />
-            Jelajahi Desa
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="border-white/50 text-white hover:bg-white hover:text-slate-800 font-semibold uppercase px-8 py-4 text-md md:text-lg bg-white/10 backdrop-blur-sm transform hover:scale-105 transition-all"
-          >
-            <MessageCircle className="mr-2 h-5 w-5" />
-            Hubungi via WhatsApp
-          </Button>
+            <a
+            href="https://maps.app.goo.gl/WWgS5HC7gWiZzxd49"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold uppercase px-8 py-4 text-md md:text-lg transform hover:scale-105 transition-all shadow-lg"
+            >
+              <Mountain className="mr-2 h-5 w-5" />
+              Jelajahi Desa
+            </Button>
+            </a>
+            <a
+            href="https://wa.me/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-white/50 text-white hover:bg-white hover:text-slate-800 font-semibold uppercase px-8 py-4 text-md md:text-lg bg-white/10 backdrop-blur-sm transform hover:scale-105 transition-all"
+            >
+              <MessageCircle className="mr-2 h-5 w-5" />
+              Hubungi via WhatsApp
+            </Button>
+            </a>
         </div>
       </div>
 
@@ -99,15 +111,15 @@ export default function HeroSection() {
         <div className="container mx-auto">
           <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
             <div className="text-center glass rounded-lg p-4 animate-float">
-              <div className="text-2xl font-bold text-white">500+</div>
+              <div className="text-2xl font-bold text-white">20+</div>
               <div className="text-white/80 text-sm">Jenis Anggrek</div>
             </div>
             <div className="text-center glass rounded-lg p-4 animate-float animate-delay-200">
               <div className="text-2xl font-bold text-white">10K+</div>
-              <div className="text-white/80 text-sm">Pengunjung/Tahun</div>
+              <div className="text-white/80 text-sm">Pengunjung</div>
             </div>
             <div className="text-center glass rounded-lg p-4 animate-float animate-delay-400">
-              <div className="text-2xl font-bold text-white">15</div>
+              <div className="text-2xl font-bold text-white">5</div>
               <div className="text-white/80 text-sm">Tahun Berdiri</div>
             </div>
           </div>

@@ -39,7 +39,7 @@ export default function ContactSection() {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8">
             {/* Contact Info */}
             <div className={`space-y-6 ${isVisible ? "animate-slide-in-left" : "opacity-0"}`}>
@@ -47,7 +47,7 @@ export default function ContactSection() {
                 <MapPin className="h-6 w-6 text-pink-300 flex-shrink-0" />
                 <div>
                   <h3 className="font-bold text-white">Alamat</h3>
-                  <p className="text-white/80 text-sm">Desa Sukamaju, Kec. Cianjur, Jawa Barat</p>
+                  <p className="text-white/80 text-sm">Dusun Gerdu, RW.17, Tulungrejo, Kec. Bumiaji, Kota Batu, Jawa Timur 65336</p>
                 </div>
               </div>
 
@@ -67,46 +67,38 @@ export default function ContactSection() {
                 </div>
               </div>
 
-              <div className="flex items-center space-x-4 glass-dark rounded-lg p-4">
-                <Mail className="h-6 w-6 text-pink-300 flex-shrink-0" />
-                <div>
-                  <h3 className="font-bold text-white">Email</h3>
-                  <p className="text-white/80 text-sm">info@kampunganggrek.com</p>
-                </div>
-              </div>
-            </div>
-
-            {/* CTA Section */}
-            <div className={`${isVisible ? "animate-slide-in-right" : "opacity-0"}`}>
-              <div className="glass-dark rounded-2xl p-6">
-                <h3 className="text-xl font-bold text-white mb-4 text-center">Kontak Cepat</h3>
-                <div className="space-y-4">
+              {/* WhatsApp Button */}
+              <div className="pt-4">
+                <a
+                  href="https://wa.me/6281234567890"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                >
                   <Button
                     size="lg"
-                    className="w-full bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-semibold shadow-lg"
+                    className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold shadow-lg"
                   >
                     <MessageCircle className="mr-2 h-5 w-5" />
                     Chat WhatsApp
                   </Button>
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="w-full border-white/30 text-white hover:bg-white/10 bg-transparent"
-                  >
-                    <Phone className="mr-2 h-5 w-5" />
-                    Telepon Langsung
-                  </Button>
-                </div>
+                </a>
+              </div>
+            </div>
 
-                <div className="mt-6 text-center">
-                  <div className="w-24 h-24 bg-white/10 rounded-lg mx-auto flex items-center justify-center mb-3">
-                    <div className="text-center">
-                      <div className="text-xl">📱</div>
-                      <span className="text-white text-xs">QR Code</span>
-                    </div>
-                  </div>
-                  <p className="text-white/70 text-sm">Scan untuk WhatsApp</p>
-                </div>
+            {/* Location Map */}
+            <div className={`${isVisible ? "animate-slide-in-right" : "opacity-0"}`}>
+              <div className="rounded-2xl overflow-hidden shadow-2xl">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.782107310679!2d112.5292784!3d-7.812875099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e787f16a5935ac7%3A0x163a15c533c97f32!2sKampung%20Anggrek%20Mandiri!5e0!3m2!1sen!2sid!4v1754294784678!5m2!1sen!2sid" 
+                  width="100%" 
+                  height="400" 
+                  style={{ border: 0 }} 
+                  allowFullScreen 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="w-full"
+                />
               </div>
             </div>
           </div>
